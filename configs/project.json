@@ -9,7 +9,8 @@
     "budget",
     "marketing"
   ],
-  "accent": "#264653",
+  "accent": "#c82c62",
+  "secondary_accent": "#2c8aa9",
   "dashboard_metrics": [
     {
       "label": "North Star",
@@ -44,5 +45,52 @@
     "The primary value proposition is: Explore channel contribution, lag, saturation, and scenario planning for budget allocation.",
     "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
     "Typical stakeholders include analytics, operations, product, and leadership teams working on mmm, budget, marketing."
+  ],
+  "app_archetype": "studio",
+  "ui_profile": {
+    "layout": "board",
+    "surface": "aurora",
+    "font_stack": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+    "radius": 29,
+    "shadow": 69,
+    "eyebrow_style": "solid",
+    "module_columns": 3,
+    "hero_align": "left",
+    "headline_mode": "tall"
+  },
+  "app_modules": [
+    {
+      "label": "Studio 01",
+      "title": "Opportunity Scorecard",
+      "description": "Score the current opportunity shape before deciding what to prioritize next.",
+      "endpoint": "/score",
+      "input_mode": "json",
+      "cta": "Score Opportunity",
+      "prefill": "{\n  \"features\": {\n    \"current_conversion\": 0.14,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 1875,\n    \"segment\": \"enterprise\"\n  }\n}",
+      "hint": "Opportunity score and top factors will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Studio 02",
+      "title": "Metric Storyline",
+      "description": "Translate KPI movement into a concise summary for product, growth, or finance stakeholders.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Summarize Metrics",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 39.5,\n    \"activation\": 39.5,\n    \"retention\": 52.0,\n    \"revenue\": 83.5\n  },\n  \"baseline\": {\n    \"acquisition\": 36.34,\n    \"activation\": 36.34,\n    \"retention\": 47.84,\n    \"revenue\": 76.82\n  }\n}",
+      "hint": "Metric storyline summary will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Studio 03",
+      "title": "Decision Memo",
+      "description": "Generate the next action memo grounded in the project-specific context.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Draft Memo",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for Marketing Mix Modeling Workbench.\",\n  \"features\": {\n    \"current_conversion\": 0.14,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 1875,\n    \"segment\": \"enterprise\"\n  },\n  \"metrics\": {\n    \"acquisition\": 39.5,\n    \"activation\": 39.5,\n    \"retention\": 52.0,\n    \"revenue\": 83.5\n  }\n}",
+      "hint": "Decision memo will appear here.",
+      "span": "normal"
+    }
   ]
 }
