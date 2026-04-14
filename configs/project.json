@@ -1,0 +1,48 @@
+{
+  "slug": "marketing-mix-modeling-workbench",
+  "title": "Marketing Mix Modeling Workbench",
+  "project_type": "analytics",
+  "domain": "Marketing Science",
+  "summary": "Explore channel contribution, lag, saturation, and scenario planning for budget allocation.",
+  "tags": [
+    "mmm",
+    "budget",
+    "marketing"
+  ],
+  "accent": "#264653",
+  "dashboard_metrics": [
+    {
+      "label": "North Star",
+      "value": "84",
+      "delta": "+7.1%"
+    },
+    {
+      "label": "Variance",
+      "value": "16%",
+      "delta": "-1.8%"
+    },
+    {
+      "label": "Decision Cycle",
+      "value": "5d",
+      "delta": "-0.5d"
+    }
+  ],
+  "sample_features": {
+    "current_conversion": 0.14,
+    "baseline_conversion": 0.12,
+    "volume": 1875,
+    "segment": "enterprise"
+  },
+  "sample_metrics": {
+    "acquisition": 39.5,
+    "activation": 39.5,
+    "retention": 52.0,
+    "revenue": 83.5
+  },
+  "knowledge_base": [
+    "Marketing Mix Modeling Workbench is positioned as a Marketing Science starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Explore channel contribution, lag, saturation, and scenario planning for budget allocation.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on mmm, budget, marketing."
+  ]
+}
